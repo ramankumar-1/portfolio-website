@@ -2,14 +2,14 @@ import streamlit as st
 
 st.set_page_config(page_title="Raman Kumar",page_icon=":computer:")
 
-st.title("My Skills")
+st.title("Where I had worked till now?")
 st.divider()
 
-st.code(body="""mySkills = ["Python", "Microsoft Power BI", "SQL", "Java", "Testing"]
-myskills.extend(["Langchain", "LLMs"])
-        
-# Learning new skills everyday...
-""",language="python")
+st.image("resources/tcs-logo.png", width=250)
+st.code('''{"Organization": "Tata Consultancy Services Limited",
+ "Role" : "System Engineer",
+ "Location" : "Mumbai, India",
+ "When"   : "July 2024 - Now"}''',language="json5")
 
 with st.sidebar:
     st.page_link(page="app.py", label=":male-technologist: About")
